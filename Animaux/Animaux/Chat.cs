@@ -8,7 +8,7 @@ namespace Animaux
 {
     internal class Chat : Animal
     {
-        public Chat(string nom, string date, int numPuce, int taille, bool concours) : base(nom, date, numPuce, taille, concours)
+        public Chat(string nom, DateTime date, int numPuce, int taille, bool concours) : base(nom, date, numPuce, taille, concours)
         {
             _nom = nom;
             _date = date;

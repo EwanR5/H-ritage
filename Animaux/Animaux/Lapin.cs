@@ -9,7 +9,7 @@ namespace Animaux
     internal class Lapin : Animal
     {
         private int _oreille;
-        public Lapin(string nom, string date, int numPuce, int taille, bool concours, int oreille) : base(nom, date, numPuce, taille, concours)
+        public Lapin(string nom, DateTime date, int numPuce, int taille, bool concours, int oreille) : base(nom, date, numPuce, taille, concours)
         {
             _nom = nom;
             _date = date;
@@ -29,7 +29,7 @@ namespace Animaux
             string chaine = _nom + " s'en va, en bondissant gaiement";
             return chaine;
         }
-        public string AfficherCaractéristiqueL()
+        public override string AfficherCaracteristique()
         {
             string chaine = " nom : " + _nom + " \n date de naissance : " + _date + " \n numéro de puce : " + _numPuce + " \n taille : " + _taille + "cm \n fait des coucours : " + _concours + "taille des oreilles : " + _oreille + "cm";
             return chaine;

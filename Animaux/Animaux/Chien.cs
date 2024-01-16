@@ -9,7 +9,7 @@ namespace Animaux
 {
     internal class Chien : Animal
     {
-        public Chien(string nom, string date, int numPuce, int taille, bool concours) : base(nom, date, numPuce, taille, concours)
+        public Chien(string nom, DateTime date, int numPuce, int taille, bool concours) : base(nom, date, numPuce, taille, concours)
         {
             _nom = nom;
             _date = date;
