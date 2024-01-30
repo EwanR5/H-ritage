@@ -8,15 +8,24 @@ namespace Formes
 {
     internal class Rectangle : Forme
     {
-        public Rectangle(string couleur, int cote1, int cote2, int cote3, int cote4) : base(couleur, cote1, cote2, cote3, cote4)
+        private double _cote1;
+        private double _cote2;
+
+        public Rectangle(string couleur, double cote1, double cote2) : base(couleur)
         {
-            _couleur = couleur;
             _cote1 = cote1;
             _cote2 = cote2;
-            _cote3 = cote3;
-            _cote4 = cote4;
         }
-
+        public override double CalculePerimetre()
+        {
+            double perimetre = _cote1 * 2 + _cote2 * 2;
+            return perimetre;
+        }
+        public override double CalculeSurface()
+        {
+            double aire = _cote1 * _cote2;
+            return aire;
+        }
 
         public string AfficherCouleur()
         {

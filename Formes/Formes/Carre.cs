@@ -8,16 +8,22 @@ namespace Formes
 {
     internal class Carre : Forme
     {
-        public Carre(string couleur, int cote1, int cote2, int cote3, int cote4) : base(couleur, cote1, cote2, cote3, cote4)
+        private double _cote;
+        public Carre(string couleur, double cote) : base(couleur)
         {
-            _couleur = couleur;
-            _cote1 = cote1;
-            _cote2 = cote2;
-            _cote3 = cote3;
-            _cote4 = cote4;
+            _cote = cote;
         }
 
-
+        public override double CalculePerimetre()
+        {
+            double perimetre = _cote * 4;
+            return perimetre;
+        }
+        public override double CalculeSurface()
+        {
+            double aire = _cote * _cote;
+            return aire;
+        }
         public string AfficherCouleur()
         {
             string phrase = "Le carré est de couleur " + _couleur;

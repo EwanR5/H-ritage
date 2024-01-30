@@ -8,10 +8,10 @@ namespace Formes
         {
             Forme[] formes = new Forme[4];
 
-            formes[0] = new Carre("Bleu", 4, 4, 4, 4);
-            formes[1] = new Rectangle("Rouge", 5, 6, 5, 6);
-            formes[2] = new Rectangle("Mauve", 1, 1, 3, 3);
-            formes[3] = new Carre("Noir", 3, 3, 3, 3);
+            formes[0] = new Carre("Bleu", 4);
+            formes[1] = new Rectangle("Rouge", 5, 6);
+            formes[2] = new Rectangle("Mauve", 1, 3);
+            formes[3] = new Carre("Noir", 3);
 
 
             for (int i = 0; i < 4; i++)
